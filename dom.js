@@ -34,7 +34,7 @@ function clickeButton(e){
 }else{
 
    
-    const datam = `<ul><li><img src="https://avatars.githubusercontent.com/u/69471820?v=4" style="width:50%"></li><li>Name: ${data.name}</li><li>Username: ${data.login}</li><li>Followers: ${data.followers}</li><li>Following: ${data.following}</li><li>Public Repo:${data.public_repos} </li></ul>`;
+    const datam = `<ul><li><img src="${data.avatar_url}" style="width:50%"></li><li>Name: ${data.name}</li><li>Username: ${data.login}</li><li>Followers: ${data.followers}</li><li>Following: ${data.following}</li><li>Public Repo:${data.public_repos} </li></ul>`;
        document.getElementById("task").innerHTML = datam ;
         
         let foloA = data.followers * 1,
@@ -57,7 +57,7 @@ function clickeButton(e){
 )  
 
 window.localStorage.setItem('clot1',
-JSON.stringify(bates)
+JSON.stringify(Number(bates))
 )  
 
 
